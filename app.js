@@ -49,7 +49,7 @@ app.post("/", (req, res) => {
    request.end();
 });
 app.post("/failure", (req, res) => {
-  res.redirect(si)
+  res.redirect("/")
 })
 
 app.listen(3000, () => {
