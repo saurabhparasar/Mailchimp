@@ -48,6 +48,9 @@ app.post("/", (req, res) => {
   //  request.write(jsonData);
    request.end();
 });
+app.post("/failure", (req, res) => {
+  res.redirect(si)
+})
 
 app.listen(3000, () => {
   console.log("server started at port 3000");
